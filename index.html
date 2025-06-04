@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Downloader</title>
+
+    <link rel="icon" href="spotify.jpg" type="image/jpeg" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        color: #1db954;
+        margin-top: 20px;
+      }
+
+      #searchInput {
+        width: 80%;
+        max-width: 400px;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #1db954;
+        border-radius: 5px;
+        background-color: #1a1a1a;
+        color: #ffffff;
+        outline: none;
+      }
+
+      #searchButton {
+        padding: 10px 15px;
+        background-color: #1db954;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      #searchButton:hover {
+        background-color: #17a247;
+      }
+
+      #results {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .track {
+        width: 90%;
+        max-width: 500px;
+        background-color: #1e1e1e;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .track img {
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+
+      .track div {
+        flex-grow: 1;
+        text-align: left;
+      }
+
+      .track p {
+        margin: 5px 0;
+        font-size: 14px;
+      }
+
+      .track a {
+        text-decoration: none;
+        color: #1db954;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .buttons button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 8px 15px;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+      }
+
+      .play-button {
+        background-color: #1db954;
+        color: white;
+      }
+
+      .play-button:hover {
+        background-color: #17a247;
+      }
+
+      .download-button {
+        background-color: #ff4444;
+        color: white;
+      }
+
+      .download-button:hover {
+        background-color: #cc0000;
+      }
+
+      .buttons button i {
+        font-size: 16px;
+      }
+
+      iframe {
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+
+      footer {
+        color: #1db954;
+      }
+
+      .footer {
+        color: yellowgreen;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Cari dan Download Lagu Spotify</h1>
+      <img src="spotify.jpg" alt="allxddev" width="50px" />
+      <p>
+        Semua Lagu Dapat DiUnduh
+      </p>
+    </div>
+    <input type="text" id="searchInput" placeholder="Masukkan nama lagu..." />
+    <button id="searchButton">Cari</button>
+    <div id="results"></div>
+    <footer>
+      <center>
+        <p>
+          Make With ♥️ by
+          <a class="footer" href="https://github.com/AllxdDev-Hosting">Lemon</a>
+        </p>
+      </center>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
