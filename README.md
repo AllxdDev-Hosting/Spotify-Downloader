@@ -18,7 +18,7 @@
 </h3>
 
 <p align="center">
-  Cek Websitenya <a href="https://allxddev-spotify.vercel.app/">Klik Saya</a>
+  Cek Websitenya <a href="https://spotify-downloader-allxddev.vercel.app/">Klik Saya</a>
 </p>
 
 <p align="center">
